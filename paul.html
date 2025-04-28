@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPN and RN Tutor | Practice Now</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f5f7fa; overflow-x: hidden; }
+    .hero { background: linear-gradient(135deg, #89C6D6, #d3443d); color: #fff; padding: 140px 20px; text-align: center; position: relative; overflow: hidden; }
+    .hero::after { content: ""; position: absolute; width: 120%; height: 120%; top: -10%; left: -10%; background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 70%); animation: move 6s linear infinite; z-index: 0; }
+    @keyframes move { 0% { transform: translate(0,0); } 50% { transform: translate(10px,10px); } 100% { transform: translate(0,0); } }
+    .hero h1, .hero p, .hero a { position: relative; z-index: 1; }
+    .section { padding: 60px 20px; text-align: center; }
+    .btn-primary { background-color: #d3443d; border: none; padding: 14px 35px; font-size: 20px; border-radius: 50px; transition: all 0.3s ease; }
+    .btn-primary:hover { background-color: #a82c2c; transform: scale(1.05); }
+    footer { background: #202020; color: #fff; text-align: center; padding: 15px; font-size: 15px; }
+    .chatbot-container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 40px 20px; background: #fff; box-shadow: 0px 8px 20px rgba(0,0,0,0.1); border-radius: 20px; animation: fadeIn 1s ease; }
+    .how-it-works { background: #fff; box-shadow: 0px 8px 20px rgba(0,0,0,0.1); border-radius: 20px; padding: 50px 20px; max-width: 900px; margin: 60px auto; animation: fadeInUp 1s ease; }
+    h2.section-title { font-weight: bold; margin-bottom: 30px; }
+    .counter { font-size: 40px; color: #d3443d; margin-bottom: 5px; }
+    .badge-award { background: gold; color: #202020; font-weight: bold; padding: 10px 20px; border-radius: 30px; display: inline-block; margin-top: 20px; font-size: 18px; }
+    .testimonial { background: #ffffff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 30px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1 class="mb-4">Master Your LPN & RN Exams</h1>
+  <p class="mb-4">Interactive Practice. Instant Feedback. Expert Explanations.</p>
+  <div class="badge-award">🏆 Top Nursing Practice 2025</div>
+  <a href="#practice" class="btn btn-light mt-4">Start Practicing Now</a>
+</section>
+
+<!-- COUNTERS SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="counter">10,000+</div>
+        <p>Students Helped</p>
+      </div>
+      <div class="col-md-4">
+        <div class="counter">97%</div>
+        <p>Pass Rate</p>
+      </div>
+      <div class="col-md-4">
+        <div class="counter">50+</div>
+        <p>Practice Areas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section how-it-works">
+  <h2 class="section-title">How It Works</h2>
+  <p>✔️ 50 unique NCLEX-style multiple-choice questions.<br>
+     ✔️ Instant scoring after each answer.<br>
+     ✔️ Detailed explanations on mistakes.<br>
+     ✔️ Adaptive difficulty based on performance.<br>
+     ✔️ No question repeats. Every session is fresh!</p>
+</section>
+
+<!-- CHATBOT SECTION -->
+<section id="practice" class="section">
+  <div class="chatbot-container">
+    <h2 class="section-title">🧠 50 Questions Challenge - Practice Live!</h2>
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='false' chatbot-id='cm9vtj6y60064u7udnuceuvzd' height='1000px' width='100%'></zapier-interfaces-chatbot-embed>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <h2 class="section-title">Student Testimonials</h2>
+  <div class="container">
+    <div class="testimonial">
+      <p>"This platform prepared me better than any other! I passed my NCLEX on the first try." – Sarah M.</p>
+    </div>
+    <div class="testimonial">
+      <p>"The explanations are so clear. I finally understand pharmacology now! Highly recommend." – James A.</p>
+    </div>
+    <div class="testimonial">
+      <p>"I loved how the difficulty adapted. It felt like having a real tutor guiding me all the way." – Bianca K.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK SESSION BUTTON -->
+<section class="section">
+  <h2>Need Personalized Tutoring?</h2>
+  <p>Work one-on-one with an expert RN Educator to sharpen your skills and pass with confidence.</p>
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookSessionModal">Book a 1-on-1 Session</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 LPN and RN Tutor. All Rights Reserved.</p>
+</footer>
+
+<!-- BOOK SESSION MODAL -->
+<div class="modal fade" id="bookSessionModal" tabindex="-1" aria-labelledby="bookSessionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookSessionModalLabel">Book a Tutoring Session</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number (Optional)</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">How Can We Help?</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
